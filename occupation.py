@@ -11,7 +11,7 @@ g_job_probability = [] #List of indeces to g_job_names
 # Reading function
 def reader():
 	#open the file, and turn it into one big string
-	f = open('occupations.csv', 'r')
+	f = open('resources/occupations.csv', 'r')
 	rawdata = f.read()
 	f.close()
 	
