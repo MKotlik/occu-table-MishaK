@@ -11,7 +11,8 @@ def index():
 def occupations():
     jobs_table =  occupation.reader()
     occupation.storer(jobs_table)
-    occu_dict = occupation.libraran(jobs_table)
+    occu_dict = occupation.librarian(jobs_table)
     rand_job = occupation.chooser()
     return render_template('occupations_page.html', job_var=rand_job, jobs_dict=occu_dict)
     
+app.run()
