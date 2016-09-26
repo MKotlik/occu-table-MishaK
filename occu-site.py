@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return 'Just go to <a href="/occupations">occupations</a>.'
+    return render_template('index.html')
 
 @app.route("/occupations")
 def occupations():
