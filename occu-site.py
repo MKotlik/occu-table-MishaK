@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import occupation
+from utils import occupation
 
 app = Flask(__name__)
 
